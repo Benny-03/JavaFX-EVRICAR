@@ -1,0 +1,54 @@
+.pane{
+    -fx-background-color: #00000090;
+}
+
+.btn-marca{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: white;
+    -fx-border-radius: 2px;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.btn-marca:hover{
+    -fx-background-color: #38da32;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #38da32;
+    -fx-border-width: 0px 0px 6px 0px;
+}
+
+.btn-tipologia{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.btn-tipologia:hover{
+    -fx-background-color: #00000020;
+}
+
+.btn-motore{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #38da32;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+}
+
+.btn-menu{
+    -fx-background-color: #98f0929b;
+    -fx-background-radius: 5px;
+    -fx-border-color: #38da32;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.btn-menu:hover{
+    -fx-background-color: #35d02d;
+}

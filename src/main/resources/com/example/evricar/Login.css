@@ -1,0 +1,48 @@
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: #38da32;
+}
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+
+.black-panel{
+    -fx-background-color: #151928;
+}
+
+.tf{
+    -fx-background-color: transparent;
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: white;
+}
+.tf_box_show{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-text-fill: white;
+}
+
+.green-btn{
+    -fx-background-color: #38da32;
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+    -fx-text-fill: black;
+}
+.green-btn:hover{
+    -fx-background-color: #97ff91;
+}
+.trans-btn-black-border{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}

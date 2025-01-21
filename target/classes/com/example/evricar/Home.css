@@ -1,0 +1,36 @@
+.trans-btn-black-border{
+    -fx-background-color: black;
+    -fx-background-radius: 0px;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.trans-btn-black-border:hover{
+    -fx-opacity: 0.60;
+}
+
+.btn-catalog{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.button-field{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2px 0px 0px 0px;
+    -fx-text-fill: white;
+}
+.button-field:hover{
+    -fx-background-color: #38da32;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #38da32;
+    -fx-border-width: 6px 0px 0px 0px;
+}

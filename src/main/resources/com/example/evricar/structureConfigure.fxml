@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="780.0" prefWidth="1350.0" style="-fx-background-color: white;" stylesheets="@Configure.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.evricar.ConfigController">
+   <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="930.0" prefWidth="1350.0" style="-fx-background-color: white;">
+      <Button fx:id="back" layoutX="15.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBack" styleClass="btn-back" text="&lt;    torna alla descrizione">
+         <font>
+            <Font name="Lao MN" size="13.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER_LEFT" layoutY="70.0" prefHeight="80.0" prefWidth="1350.0" style="-fx-background-color: #00000020;">
+         <Label prefHeight="46.0" prefWidth="394.0" text="Configurazione" wrapText="true">
+            <font>
+               <Font name="Georgia Bold" size="40.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="40.0" />
+            </HBox.margin>
+         </Label>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prezzo :">
+            <font>
+               <Font name="Georgia" size="22.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="610.0" />
+            </HBox.margin>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="€">
+            <font>
+               <Font size="28.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin>
+         </Text>
+         <Label fx:id="prezzo" prefHeight="35.0" prefWidth="160.0">
+            <font>
+               <Font name="Tahoma" size="28.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin>
+         </Label>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="38.0" layoutY="165.0" prefHeight="274.0" prefWidth="411.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2;">
+         <ImageView fx:id="image" fitHeight="274.0" fitWidth="411.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+      </HBox>
+      <Pane layoutX="495.0" layoutY="165.0" prefHeight="299.0" prefWidth="818.0">
+         <TextField editable="false" layoutX="10.0" prefHeight="45.0" prefWidth="94.0" styleClass="title" text="Colore">
+            <font>
+               <Font name="Euphemia UCAS Bold" size="20.0" />
+            </font>
+         </TextField>
+
+         <HBox layoutX="25.0" layoutY="47.0" prefHeight="47.0" prefWidth="792.0">
+            <VBox alignment="CENTER" prefHeight="78.0" prefWidth="114.0">
+               <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="114.0">
+                  <ImageView fx:id="Xnero" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.36" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="Xbianco" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="-10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </HBox>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="78.0" prefWidth="243.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <HBox prefHeight="32.0" prefWidth="220.0">
+                  <ImageView fx:id="Xrosso" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="Xblu" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="-10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="Xverde" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="-10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="Xarancione" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="-10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="Xgiallo" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <Image url="@Image/X.png" />
+                     <effect>
+                        <Shadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.21960784494876862" green="0.8549019694328308" blue="0.19607843458652496" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="-10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </HBox>
+            </VBox>
+         </HBox>
+
+         <HBox layoutX="25.0" layoutY="60.0" prefHeight="78.0" prefWidth="792.0">
+            <VBox alignment="CENTER" prefHeight="78.0" prefWidth="114.0">
+               <HBox prefHeight="34.0" prefWidth="96.0">
+                  <Button fx:id="nero" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: black;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="bianco" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: white;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </HBox>
+               <TextField editable="false" styleClass="linea">
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin>
+               </TextField>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Di serie">
+                  <font>
+                     <Font name="Lao MN" size="17.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="-14.0" />
+                  </VBox.margin>
+               </Text>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="78.0" prefWidth="290.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <HBox prefHeight="32.0" prefWidth="220.0">
+                  <Button fx:id="rosso" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: red;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="blu" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: blue;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="verde" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: green;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="arancione" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: orange;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="giallo" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: yellow;" styleClass="btn-circle">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </HBox>
+               <TextField editable="false" styleClass="linea">
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin>
+               </TextField>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+ 1000 €">
+                  <font>
+                     <Font name="Lao MN" size="17.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="-14.0" />
+                  </VBox.margin>
+               </Text>
+            </VBox>
+         </HBox>
+
+         <TextField editable="false" layoutX="10.0" layoutY="150.0" prefHeight="45.0" prefWidth="103.0" styleClass="title" text="Motore">
+            <font>
+               <Font name="Euphemia UCAS Bold" size="20.0" />
+            </font>
+         </TextField>
+         <VBox layoutX="25.0" layoutY="200.0" prefHeight="92.0" prefWidth="720.0">
+            <HBox prefHeight="42.0" prefWidth="791.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <RadioButton fx:id="s_benzina" mnemonicParsing="false" text="benzina">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+               </RadioButton>
+               <RadioButton fx:id="s_gasolio" mnemonicParsing="false" text="gasolio ( + 1000 € )">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="35.0" />
+                  </HBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="s_elettrica" mnemonicParsing="false" text="elettrica ( + 5000 € )">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="35.0" />
+                  </HBox.margin>
+               </RadioButton>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="791.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <RadioButton fx:id="s_ibrida" mnemonicParsing="false" text="ibrida ( + 3000 € )">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="30.0" />
+                  </HBox.margin>
+               </RadioButton>
+               <RadioButton fx:id="s_ibridaPlugIn" mnemonicParsing="false" text="ibrida plug-in ( + 2000 € )">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="35.0" />
+                  </HBox.margin>
+               </RadioButton>
+            </HBox>
+         </VBox>
+      </Pane>
+      <Pane layoutX="38.0" layoutY="455.0" prefHeight="237.0" prefWidth="1280.0">
+         <TextField editable="false" prefHeight="45.0" prefWidth="123.0" styleClass="title" text="Optional">
+            <font>
+               <Font name="Euphemia UCAS Bold" size="20.0" />
+            </font>
+         </TextField>
+         <VBox layoutX="20.0" layoutY="55.0" prefHeight="181.0" prefWidth="626.0">
+            <CheckBox fx:id="interniPelle" mnemonicParsing="false" onAction="#Pelle" text="interni in vera pelle ( + 1000 € )">
+               <font>
+                  <Font name="Lao MN" size="19.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="vetriOscurati" mnemonicParsing="false" onAction="#Vetri" text="vetri oscurati ( + 2000 € )">
+               <font>
+                  <Font name="Lao MN" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="telecPost" mnemonicParsing="false" onAction="#Telecamera" text="telecamera posteriore ( + 3000 € )">
+               <font>
+                  <Font name="Lao MN" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="cambioAuto" mnemonicParsing="false" onAction="#Cambio" text="cambio automatico ( + 4000 € )">
+               <font>
+                  <Font name="Lao MN" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="sensParcheggio" mnemonicParsing="false" onAction="#Sensori" text="sensori parcheggio, sia posteriori che anteriori ( + 5000 € )">
+               <font>
+                  <Font name="Lao MN" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+         </VBox>
+         <VBox layoutX="653.0" layoutY="55.0" prefHeight="181.0" prefWidth="626.0">
+            <children>
+               <CheckBox fx:id="extra1" mnemonicParsing="false" onAction="#setPrice1" prefHeight="31.0" prefWidth="626.0" text="CheckBox">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font></CheckBox>
+               <CheckBox fx:id="extra2" mnemonicParsing="false" onAction="#setPrice2" prefHeight="31.0" prefWidth="629.0" text="CheckBox">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="5.0" />
+                  </VBox.margin></CheckBox>
+               <CheckBox fx:id="extra3" mnemonicParsing="false" onAction="#setPrice3" prefHeight="31.0" prefWidth="631.0" text="CheckBox">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="5.0" />
+                  </VBox.margin></CheckBox>
+               <CheckBox fx:id="extra4" mnemonicParsing="false" onAction="#setPrice4" prefHeight="31.0" prefWidth="643.0" text="CheckBox">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="5.0" />
+                  </VBox.margin></CheckBox>
+               <CheckBox fx:id="extra5" mnemonicParsing="false" onAction="#setPrice5" prefHeight="31.0" prefWidth="656.0" text="CheckBox">
+                  <font>
+                     <Font name="Lao MN" size="19.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="5.0" />
+                  </VBox.margin></CheckBox>
+            </children>
+         </VBox>
+      </Pane>
+
+      <Button fx:id="prev" contentDisplay="CENTER" layoutX="1110.0" layoutY="850.0" mnemonicParsing="false" onAction="#askPrev" prefHeight="65.0" prefWidth="198.0" styleClass="btn-prev" text="Preventivo   &gt;">
+         <font>
+            <Font name="Lao MN" size="25.0" />
+         </font>
+      </Button>
+      <Pane layoutX="38.0" layoutY="700.0" prefHeight="169.0" prefWidth="1269.0">
+         <children>
+            <TextField editable="false" prefHeight="45.0" prefWidth="336.0" styleClass="title" text="Informazioni per il preventivo">
+               <font>
+                  <Font name="Euphemia UCAS Bold" size="20.0" />
+               </font>
+            </TextField>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" prefHeight="62.0" prefWidth="1225.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono:">
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tel" prefHeight="34.0" prefWidth="134.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email: ">
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="email" prefHeight="34.0" prefWidth="198.0">
+                     <font>
+                        <Font name="Lao MN" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Luogo di ritiro:">
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ChoiceBox fx:id="luogo" onMouseReleased="#getChoice" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+
+      <Button fx:id="btn_usato" layoutX="38.0" layoutY="870.0" mnemonicParsing="false" onAction="#askUsato" styleClass="btn-prev" text="Inserisci usato">
+         <font>
+            <Font name="Euphemia UCAS Bold" size="15.0" />
+         </font>
+      </Button>
+
+
+      <Text fx:id="text_usato" fill="#514b4b" layoutX="150.0" layoutY="1090.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserisci la tua immagine">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Pane fx:id="pane_usato" layoutX="48.0" layoutY="940.0" prefHeight="274.0" prefWidth="945.0">
+         <HBox alignment="CENTER" prefHeight="274.0" prefWidth="411.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2;">
+            <ImageView fx:id="imageUsato" fitHeight="274.0" fitWidth="411.0" nodeOrientation="INHERIT" onDragDropped="#DragAndDrop" onDragOver="#ViewImageDrag" pickOnBounds="true" preserveRatio="true" />
+         </HBox>
+         <VBox layoutX="460.0" layoutY="30.0" prefHeight="235.0" prefWidth="457.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="457.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marca:">
+                  <font>
+                     <Font name="Lao MN" size="17.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="marca_usato" prefHeight="11.0" prefWidth="155.0">
+                  <HBox.margin>
+                     <Insets left="30.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="Lao MN" size="15.0" />
+                  </font>
+               </TextField>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="457.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Modello:">
+                  <font>
+                     <Font name="Lao MN" size="17.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="modello_usato" prefHeight="11.0" prefWidth="155.0">
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="Lao MN" size="15.0" />
+                  </font>
+               </TextField>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="457.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anno di immatricolazione:">
+                  <font>
+                     <Font name="Lao MN" size="17.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="anno_usato" prefHeight="11.0" prefWidth="119.0">
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="Lao MN" size="15.0" />
+                  </font>
+               </TextField>
+            </HBox>
+            <Button fx:id="rimuovi_img" mnemonicParsing="false" onAction="#removeImage" styleClass="btn-prev" text="Rimuovi immagine">
+               <font>
+                  <Font name="Euphemia UCAS Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </VBox>
+      </Pane>
+
+
+      <Pane fx:id="popUp" disable="true" layoutX="460.0" layoutY="240.0" prefHeight="288.0" prefWidth="468.0" style="-fx-background-color: #38da32; -fx-border-color: black; -fx-border-width: 2;" visible="false">
+         <ImageView fx:id="esci" fitHeight="28.0" fitWidth="25.0" layoutX="428.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+            <effect>
+               <Shadow height="1.0" radius="0.0" width="0.0" />
+            </effect>
+            <Image url="@Image/exit.png" />
+         </ImageView>
+         <Text layoutX="202.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey!">
+            <font>
+               <Font name="Georgia Bold" size="28.0" />
+            </font>
+         </Text>
+         <Text layoutX="25.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devi accedere se hai dell'usato">
+            <font>
+               <Font name="Georgia Bold" size="27.0" />
+            </font>
+         </Text>
+         <Hyperlink fx:id="accedi" layoutX="181.0" layoutY="210.0" onAction="#setAccedi" prefHeight="48.0" prefWidth="129.0" styleClass="btn-accedi" text="Accedi" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="23.0" />
+            </font>
+            <padding>
+               <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+            </padding>
+         </Hyperlink>
+      </Pane>
+   </AnchorPane>
+</ScrollPane>

@@ -1,0 +1,38 @@
+.btn-mostra{
+    -fx-background-color: #98f0929b;
+    -fx-background-radius: 5px;
+    -fx-border-color: #38da32;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.btn-mostra:hover{
+    -fx-background-color: #35d02d;
+}
+
+.txt-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #38da32;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+}
+
+.table-view {
+    -fx-font-size: 15px;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #00000020;
+}
+
+.btn-back{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #38da32;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.btn-back:hover{
+    -fx-background-color: #00000020;
+}

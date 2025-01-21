@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1125.0" style="-fx-background-color: white;" stylesheets="@Catalog.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.evricar.AudiController">
+   <ImageView fitHeight="85.0" fitWidth="108.0" layoutX="40.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@Image/Audi/AudiLogo.png" />
+   </ImageView>
+   <Label layoutX="170.0" layoutY="39.0" text="Audi">
+      <font>
+         <Font name="Georgia Bold" size="35.0" />
+      </font>
+   </Label>
+   <TextField fx:id="linea_sportiva" layoutX="321.0" layoutY="115.0" prefHeight="36.0" prefWidth="94.45" />
+   <Button fx:id="btn_sportiva" layoutX="321.0" layoutY="110.0" mnemonicParsing="false" styleClass="btn-tipologia" text="Sportive">
+      <font>
+         <Font name="Euphemia UCAS Bold" size="17.0" />
+      </font>
+   </Button>
+   <TextField fx:id="linea_citycar" layoutX="519.0" layoutY="115.0" prefHeight="36.0" prefWidth="82.85" visible="false" />
+   <Button fx:id="btn_citycar" layoutX="519.0" layoutY="110.0" mnemonicParsing="false" styleClass="btn-tipologia" text="Citycar">
+      <font>
+         <Font name="Euphemia UCAS Bold" size="17.0" />
+      </font>
+   </Button>
+   <TextField fx:id="linea_coupe" layoutX="695.0" layoutY="115.0" prefHeight="36.0" prefWidth="77.2" visible="false" />
+   <Button fx:id="btn_coupe" layoutX="695.0" layoutY="110.0" mnemonicParsing="false" styleClass="btn-tipologia" text="Coupè">
+      <font>
+         <Font name="Euphemia UCAS Bold" size="17.0" />
+      </font>
+   </Button>
+   <Pane fx:id="panel_sportive" layoutY="212.0" prefHeight="478.0" prefWidth="1125.0">
+      <VBox prefHeight="510.0" prefWidth="1125.0">
+         <HBox prefHeight="278.0" prefWidth="1025.0">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+            <VBox  prefHeight="300.0" prefWidth="319.0">
+               <ImageView fitHeight="161.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@Image/Audi/AudiRS3.png" />
+               </ImageView>
+               <HBox prefHeight="40.0" prefWidth="290.0">
+                  <VBox.margin>
+                     <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+                  <Label styleClass="btn-motore" text="Gasolio">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="btn-motore" text="Benzina">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </Label>
+               </HBox>
+               <HBox prefHeight="65.0" prefWidth="290.0">
+                  <VBox.margin>
+                     <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RS3 Sportback">
+                     <font>
+                        <Font name="Georgia Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <Reflection bottomOpacity="0.01" fraction="0.68" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fx:id="mostra_rs3" fitHeight="30.0" fitWidth="31.0" onMouseClicked="#RS_3" pickOnBounds="true" preserveRatio="true" rotate="-90.0" style="-fx-cursor: hand;">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <Image url="@Image/Lente.png" />
+                  </ImageView>
+               </HBox>
+            </VBox>
+         </HBox>
+      </VBox>
+   </Pane>
+   <Pane fx:id="panel_citycar" layoutY="212.0" prefHeight="478.0" prefWidth="1125.0" visible="false">
+      <VBox prefHeight="510.0" prefWidth="1125.0">
+         <HBox prefHeight="278.0" prefWidth="1025.0">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+            <VBox  prefHeight="300.0" prefWidth="319.0">
+               <ImageView fitHeight="161.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@Image/Audi/AudiA1.png" />
+               </ImageView>
+               <HBox prefHeight="40.0" prefWidth="290.0">
+                  <VBox.margin>
+                     <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+                  <Label styleClass="btn-motore" text="Gasolio">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="btn-motore" text="Benzina">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </Label>
+               </HBox>
+               <HBox prefHeight="65.0" prefWidth="290.0">
+                  <VBox.margin>
+                     <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Audi A1">
+                     <font>
+                        <Font name="Georgia Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <Reflection bottomOpacity="0.01" fraction="0.68" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView onMouseClicked="#A1" fx:id="mostra_A1" fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" style="-fx-cursor: hand;">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <Image url="@Image/Lente.png" />
+                  </ImageView>
+               </HBox>
+            </VBox>
+         </HBox>
+      </VBox>
+   </Pane>
+   <Pane fx:id="panel_coupe" layoutY="212.0" prefHeight="478.0" prefWidth="1125.0" visible="false">
+      <VBox prefHeight="510.0" prefWidth="1125.0">
+         <HBox prefHeight="278.0" prefWidth="1025.0">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+            <VBox  prefHeight="300.0" prefWidth="319.0">
+               <ImageView fitHeight="161.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets left="12.0" />
+                  </VBox.margin>
+                  <Image url="@Image/Audi/AudiA5.jpeg" />
+               </ImageView>
+               <HBox prefHeight="40.0" prefWidth="290.0">
+                  <VBox.margin>
+                     <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+                  <Label styleClass="btn-motore" text="Gasolio">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="btn-motore" text="Benzina">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Lao MN" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </Label>
+               </HBox>
+               <HBox prefHeight="65.0" prefWidth="290.0">
+                  <VBox.margin>
+                     <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Audi A5">
+                     <font>
+                        <Font name="Georgia Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <Reflection bottomOpacity="0.01" fraction="0.68" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView onMouseClicked="#A5" fx:id="mostra_A5" fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" style="-fx-cursor: hand;">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <Image url="@Image/Lente.png" />
+                  </ImageView>
+               </HBox>
+            </VBox>
+         </HBox>
+      </VBox>
+   </Pane>
+</Pane>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1350.0" stylesheets="@Prev.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.evricar.PreventivoController">
+   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1261.0" prefWidth="1350.0" style="-fx-background-color: white;">
+      <Button fx:id="indietro" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBack" styleClass="btn-back" text="&lt;    torna alla configurazione">
+         <font>
+            <Font name="Lao MN" size="13.0" />
+         </font></Button>
+      <AnchorPane layoutX="249.0" layoutY="90.0" prefHeight="1036.0" prefWidth="897.0" styleClass="file-prev">
+         <ImageView fitHeight="140.0" fitWidth="147.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/LogoNoScritte.png" />
+         </ImageView>
+         <Label layoutX="170.0" layoutY="43.0" prefHeight="30.0" prefWidth="139.0" text="EVRICAR">
+            <font>
+               <Font name="Georgia Bold" size="25.0" />
+            </font>
+         </Label>
+         <Label layoutX="171.0" layoutY="70.0" text="Everyday. Everywhere.">
+            <font>
+               <Font name="Georgia Italic" size="19.0" />
+            </font>
+         </Label>
+         <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="160.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Preventivo per l'acquisto di un Veicolo Nuovo" />
+            <HBox prefHeight="31.0" prefWidth="823.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Egregio" />
+               <Label fx:id="nome" prefHeight="19.0" prefWidth="147.0" styleClass="info" text="Nome">
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tel. ">
+                  <HBox.margin>
+                     <Insets left="40.0" />
+                  </HBox.margin>
+               </Text>
+               <Label fx:id="telef" prefHeight="19.0" prefWidth="137.0" styleClass="info" text="telefono">
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email: ">
+                  <HBox.margin>
+                     <Insets left="40.0" />
+                  </HBox.margin>
+               </Text>
+               <Label fx:id="mail" prefHeight="20.0" prefWidth="198.0" styleClass="info" text="mail">
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="la vettura da Lei individuata è">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="785.0" style="-fx-border-color: black; -fx-border-width: 2;">
+               <VBox.margin>
+                  <Insets bottom="25.0" left="20.0" right="20.0" top="25.0" />
+               </VBox.margin>
+               <Label fx:id="marca" prefHeight="26.0" prefWidth="122.0" text="Marca">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="modello" prefHeight="28.0" prefWidth="187.0" text="Modello">
+                  <font>
+                     <Font name="System Bold" size="23.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="30.0" />
+                  </HBox.margin>
+               </Label>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Motore: ">
+                  <HBox.margin>
+                     <Insets left="30.0" />
+                  </HBox.margin>
+               </Text>
+               <Label fx:id="mot" prefHeight="19.0" prefWidth="106.0" styleClass="info" text="motore">
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Colore: ">
+                  <HBox.margin>
+                     <Insets left="30.0" />
+                  </HBox.margin>
+               </Text>
+               <Label fx:id="col" prefHeight="19.0" prefWidth="88.0" styleClass="info" text="colore">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+               </Label>
+            </HBox>
+            <HBox prefHeight="24.0" prefWidth="823.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="punto di ritiro scelto:" />
+               <Label fx:id="citta" prefHeight="20.0" prefWidth="104.0" styleClass="info" text="città">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+               </Label>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VETTURA CON OPTIONAL SCELTI (incluso colore e motore)">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Label fx:id="opt" alignment="TOP_LEFT" prefHeight="148.0" prefWidth="783.0" text="optional" wrapText="true">
+               <VBox.margin>
+                  <Insets left="15.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="104.0" prefWidth="783.0" style="-fx-border-color: black; -fx-border-width: 2;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="50.0"/>
+               </VBox.margin>
+               <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="823.0">
+                  <VBox.margin>
+                     <Insets/>
+                  </VBox.margin>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prezzo a Lei riservato">
+                     <font>
+                        <Font name="System Bold" size="17.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0"/>
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="€">
+                     <font>
+                        <Font name="System Bold" size="20.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="480.0"/>
+                     </HBox.margin>
+                  </Text>
+                  <Label fx:id="prezzo" prefHeight="26.0" prefWidth="115.0" text="prezzo">
+                     <HBox.margin>
+                        <Insets left="20.0"/>
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0"/>
+                     </font>
+                  </Label>
+               </HBox>
+               <HBox prefHeight="34.0" prefWidth="779.0">
+                  <VBox.margin>
+                     <Insets top="10.0"/>
+                  </VBox.margin>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="sconto:">
+                     <font>
+                        <Font size="20.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="360.0"/>
+                     </HBox.margin>
+                  </Text>
+                  <Label fx:id="sconto" prefHeight="26.0" prefWidth="60.0">
+                     <font>
+                        <Font name="System Bold" size="20.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0"/>
+                     </HBox.margin>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+                     <font>
+                        <Font name="System Bold" size="20.0"/>
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="prezzo scontato:">
+                     <font>
+                        <Font size="20.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0"/>
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="€">
+                     <font>
+                        <Font name="System Bold" size="20.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0"/>
+                     </HBox.margin>
+                  </Text>
+                  <Label fx:id="prezzo_scontato" prefHeight="26.0" prefWidth="115.0">
+                     <font>
+                        <Font name="System Bold" size="20.0"/>
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0"/>
+                     </HBox.margin>
+                  </Label>
+               </HBox>
+            </VBox>
+            <Pane prefHeight="71.0" prefWidth="823.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <VBox prefHeight="71.0" prefWidth="823.0">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IL SUO VEICOLO USATO">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <HBox prefHeight="35.0" prefWidth="793.0">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marca:" />
+                     <Label fx:id="marca_used" prefHeight="20.0" prefWidth="102.0" styleClass="info" text="marca usato">
+                        <HBox.margin>
+                           <Insets left="15.0" />
+                        </HBox.margin>
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font>
+                     </Label>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Modello: ">
+                        <HBox.margin>
+                           <Insets left="40.0" />
+                        </HBox.margin>
+                     </Text>
+                     <Label fx:id="usato_mod" prefHeight="20.0" prefWidth="218.0" styleClass="info" text="modello usato">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="15.0" />
+                        </HBox.margin>
+                     </Label>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anno di immatricolazione:">
+                        <HBox.margin>
+                           <Insets left="40.0" />
+                        </HBox.margin>
+                     </Text>
+                     <Label fx:id="anno_used" prefHeight="20.0" prefWidth="82.0" styleClass="info" text="anno">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="15.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </VBox>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="823.0">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nota bene">
+                  <font>
+                     <Font size="17.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Il presente preventivo ha validità 20 giorni">
+                  <font>
+                     <Font name="System Bold" size="17.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="150.0" />
+                  </HBox.margin>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data di ritiro:">
+                  <font>
+                     <Font size="17.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="90.0" />
+                  </HBox.margin>
+               </Text>
+               <Label fx:id="data_rit" prefHeight="22.0" prefWidth="99.0" text="data">
+                  <font>
+                     <Font name="System Bold" size="17.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+               </Label>
+            </HBox>
+         </VBox>
+      </AnchorPane>
+      <Button fx:id="accetta" layoutX="1090.0" layoutY="1170.0" mnemonicParsing="false" onAction="#AccettaPrev" prefHeight="42.0" prefWidth="208.0" styleClass="btn-accetta" text="Salva">
+         <font>
+            <Font name="Lao MN" size="23.0" />
+         </font></Button>
+
+
+      <Pane fx:id="popUp_senzaUsato" disable="true" layoutX="460.0" layoutY="650.0" prefHeight="288.0" prefWidth="468.0" style="-fx-background-color: #38da32; -fx-border-color: black; -fx-border-width: 2;" visible="false">
+         <Text layoutX="184.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grazie">
+            <font>
+               <Font name="Georgia Bold" size="28.0" />
+            </font>
+         </Text>
+         <Text layoutX="15.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="il tuo preventivo è stato salvato ">
+            <font>
+               <Font name="Georgia Bold" size="27.0" />
+            </font>
+         </Text>
+         <Button fx:id="catalogo" layoutX="161.0" layoutY="205.0" mnemonicParsing="false" onAction="#goToCatalog" styleClass="btn-fine" text="Torna al catalogo">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+      </Pane>
+      <Pane fx:id="popUp_conUsato" disable="true" layoutX="470.0" layoutY="650.0" prefHeight="288.0" prefWidth="468.0" style="-fx-background-color: #38da32; -fx-border-color: black; -fx-border-width: 2;" visible="false">
+         <Text layoutX="60.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grazie, il suo preventivo">
+            <font>
+               <Font name="Georgia Bold" size="28.0" />
+            </font>
+         </Text>
+         <Text layoutX="78.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dovrà essere accettato">
+            <font>
+               <Font name="Georgia Bold" size="27.0" />
+            </font>
+         </Text>
+         <Button fx:id="catalogo1" layoutX="162.0" layoutY="198.0" mnemonicParsing="false" onAction="#goToCatalog" styleClass="btn-fine" text="Torna al catalogo">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+      </Pane>
+
+   </AnchorPane>
+</ScrollPane>

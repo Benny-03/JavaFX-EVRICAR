@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1350.0" stylesheets="@Home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.evricar.HomeController">
+    <HBox prefHeight="90.0" prefWidth="1350.0" style="-fx-background-color: black;">
+        <ImageView fitHeight="90.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+            <HBox.margin>
+                <Insets bottom="2.0" left="20.0" />
+            </HBox.margin>
+            <Image url="@Image/LogoNoScritte.png" />
+        </ImageView>
+        <Label text="EVRICAR" textFill="WHITE">
+            <font>
+                <Font name="Georgia Bold" size="25.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="15.0" top="20.0" />
+            </HBox.margin>
+        </Label>
+        <Label text="Everyday. Everywhere." textFill="WHITE">
+            <font>
+                <Font name="Georgia Italic" size="19.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="-125.0" top="50.0" />
+            </HBox.margin>
+        </Label>
+        <ImageView fitHeight="44.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+                <Shadow height="1.0" radius="0.0" width="0.0">
+                    <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                    </color>
+                </Shadow>
+            </effect>
+            <HBox.margin>
+                <Insets left="750.0" top="25.0" />
+            </HBox.margin>
+            <Image url="@Image/User.png" />
+        </ImageView>
+        <Hyperlink fx:id="myEvricar" text="My Evricar" textFill="WHITE" underline="true" HBox.hgrow="ALWAYS">
+            <font>
+                <Font name="Arial Bold" size="20.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="20.0" top="28.0" />
+            </HBox.margin>
+        </Hyperlink>
+    </HBox>
+
+    <AnchorPane fx:id="panel_audi" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/Audi/AudiFoto.jpeg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="122.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/Audi/AudiLogo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_lamborghini" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/Lamborghini/LamborghiniFoto.jpg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="150.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/Lamborghini/LamborghiniLogo1.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_mercedes" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/Mercedes/MercedesFoto.jpeg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="122.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+                <Shadow height="0.0" radius="0.0" width="0.0" />
+            </effect>
+            <Image url="@Image/Mercedes/MercedesLogo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_mustang" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/Mustang/MustangFoto.jpeg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="122.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/Mustang/MustangLogo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_opel" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/Opel/OpelFoto.jpeg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="121.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/Opel/OpelLogo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_landRover" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/LandRover/RangeRoverFoto.jpeg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="122.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/LandRover/RangeRoverLogo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_renault" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+            <Image url="@Image/Renault/RenaultFoto.jpeg" />
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="150.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/Renault/RenaultLogo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <AnchorPane fx:id="panel_tesla" layoutY="90.0" prefHeight="690.0" prefWidth="1350.0" visible="false">
+        <ImageView fitHeight="690.0" fitWidth="1350.0" pickOnBounds="true">
+         <image>
+            <Image url="@Image/Tesla/TeslaFoto.jpeg" />
+         </image>
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="148.0" layoutX="150.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Image/Tesla/TeslaLogo1.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <Pane layoutX="30.0" layoutY="690.0" opacity="0.7" prefHeight="70.0" prefWidth="1290.0" style="-fx-background-color: black;" />
+    <HBox layoutX="30.0" layoutY="695.0" prefHeight="64.0" prefWidth="1290.0" style="-fx-background-color: transparent;">
+        <TextField fx:id="greenLine_audi" prefHeight="40.0" prefWidth="126.0">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_lamborghini" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_mercedes" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_mustang" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_opel" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_landRover" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_renault" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+        <TextField fx:id="greenLine_tesla" prefHeight="40.0" prefWidth="126.0" visible="false">
+           <HBox.margin>
+               <Insets left="30.0" top="10.0" />
+           </HBox.margin>
+        </TextField>
+    </HBox>
+   <Button fx:id="catalogo" layoutX="290.0" layoutY="175.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="204.0" styleClass="btn-catalog" text="Scopri  il catalogo">
+      <font>
+         <Font name="Arial Bold" size="17.0" />
+      </font>
+   </Button>
+
+    <HBox layoutX="30.0" layoutY="695.0" prefHeight="64.0" prefWidth="1290.0" style="-fx-background-color: transparent;">
+        <Button fx:id="button_audi" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Audi" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_lamborghini" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Lamborghini" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_mercedes" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Mercedes" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_mustang" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Mustang" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_opel" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Opel" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_landRover" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Land Rover" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_renault" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Renault" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="button_tesla" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" styleClass="button-field" text="Tesla" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="17.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" top="15.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,50 @@
+.btn-back{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #38da32;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.btn-back:hover{
+    -fx-background-color: #00000020;
+}
+
+.btn-accetta{
+    -fx-background-color: #98f0929b;
+    -fx-background-radius: 5px;
+    -fx-border-color: #38da32;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.btn-accetta:hover{
+    -fx-background-color: #35d02d;
+}
+
+.file-prev{
+    -fx-border-color: grey;
+    -fx-border-width: 2px;
+    -fx-background-color: #eeecec;
+}
+
+.info{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: black;
+}
+
+.btn-fine{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.btn-fine:hover{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
